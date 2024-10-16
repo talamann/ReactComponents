@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button and Input Example</title>
+</head>
+<body>
+    <div id="wrapper">
+        <input type="text" placeholder="Enter text here">
+        <button>Click Me</button>
+    </div>
+
+    <script>
+      // Select elements based on their position inside the div with id 'wrapper'
+const wrapper = document.getElementById('wrapper');
+const inputElem = wrapper.querySelector('input');
+const buttonElem = wrapper.querySelector('button');
+
+// Add a click event listener to the button
+buttonElem.addEventListener('click', () => {
+    alert(`Input value: ${inputElem.value}`);
+});
+
+    </script>
+</body>
+</html>
