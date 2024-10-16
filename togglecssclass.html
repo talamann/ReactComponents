@@ -1,0 +1,9 @@
+<button id="toggleBtn">Toggle Visibility</button>
+<div id="toggleDiv" style="display: none;">Hello, I am here!</div>
+
+<script>
+document.getElementById('toggleBtn').addEventListener('click', () => {
+    const div = document.getElementById('toggleDiv');
+    div.style.display = (div.style.display === 'none' || div.style.display === '') ? 'block' : 'none';
+});
+</script>
